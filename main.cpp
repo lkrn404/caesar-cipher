@@ -15,10 +15,10 @@ string caesarCipher(const string& text, int shift) {
 
     for (char c : text) {
         if (isupper(c)) {
-            result += char((c - 'A' + shift + 26) % 26 + 'A');
+            result += char(((c - 'A' + shift) % 26 + 26) % 26 + 'A');
         }
         else if (islower(c)) {
-            result += char((c - 'a' + shift + 26) % 26 + 'a');
+            result += char(((c - 'a' + shift) % 26 + 26) % 26 + 'a');
         }
         else {
             result += c;
