@@ -30,7 +30,7 @@ string caesarCipher(const string& text, int shift) {
 
 int main(int argc, char* argv[]) {
     bool decrypt = false;
-    int shift = 0;
+    int shift = 34;
 
     // Parse arguments
     for (int i = 1; i < argc; ++i) {
