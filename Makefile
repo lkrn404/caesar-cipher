@@ -1,5 +1,5 @@
 CXX = g++
-CXXFLAGS = -std=c++2a -Wall -Wextra -O3 -flto -pedantic-errors -fsanitize=address -fsanitize=undefined
+CXXFLAGS = -std=c++2a -Wall -Wextra -O2 -flto -pedantic-errors -fsanitize=address -fsanitize=undefined
 LDFLAGS = -O1 -fsanitize=address -fsanitize=undefined
 
 PREFIX ?= /usr/local
