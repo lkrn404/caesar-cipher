@@ -1,6 +1,6 @@
 # Caesar Cipher
 
-**WARNING:** this tool is for educational use only, and should **NOT** be used for securing sensitive information. It is **NOT** comparable to a modern encryption algorithm.
+**!!WARNING!!:** this tool is for educational use only, and should **NOT** be used for securing sensitive information. It is **NOT** comparable to a modern encryption algorithm. This tool may potentially provide a false sense of security for a user who believes it to be a more sophisiticated encryption algorithm.
 
 This program is a simple implementation of the [Caesar Cipher](https://en.wikipedia.org/wiki/Caesar_cipher) encryption algorithm in C++ for Linux, MacOS, and Windows via WSL. **Pipes** are used to send data to and from the program via the commandline. It includes the ability to encrypt and decrypt (-d/--decrypt) with either a default shift of 34 or a specified value (-s/-shift n). 
 
