@@ -1,2 +1,4 @@
 *.o
 ccipher
+file.txt
+encrypted_file.txt

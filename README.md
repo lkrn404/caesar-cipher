@@ -33,5 +33,30 @@ This program works by using unix-style shell pipes to send the output of another
 # Encrypt 'Hello World' using the default shift of 34
 echo "Hello World" | ./ccipher
 # Decrypt the resulting 'Pmttw Ewztl' using the -d or --decrypt flag
-echo "Pmttw Ewztl" | ./ccipher -d
+echo "Pmttw Ewztl" | ./ccipher --decrypt
+```
+
+You can also specify a custom shift value using the -s or --shift flags:
+```bash
+echo "Hello World" | ./ccipher --shift 3
+echo "Khoor Zruog" | ./ccipher -d -s 3
+```
+
+### Working with Files:
+
+Because this program writes and reads stin/stdout, you can also use it to encrypt and decrypt text files in place.
+
+Create a file and send some text to it.
+```bash
+echo "Hello World, this is a text file." >> file.txt  
+```
+
+Get the contents of a text file and encrypt it:
+```bash
+cat file.txt | ./ccipher > encrypted_file.txt
+```
+
+Read the contents of an encrypted file:
+```bash
+cat encrypted_file.txt | ./ccipher -d
 ```
