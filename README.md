@@ -44,7 +44,7 @@ echo "Khoor Zruog" | ./ccipher -d -s 3
 
 ### Working with Files:
 
-Because this program writes and reads stin/stdout, you can also use it to encrypt and decrypt text files in place.
+Because this program writes and reads stdin/stdout, you can also use it to encrypt and decrypt text files.
 
 Create a file and send some text to it.
 ```bash
